@@ -1,6 +1,6 @@
 [
   {
-    "platformVersion": "0.5.x",
+    "platformVersion": "0.x",
     "targetNativeDependencies": [
       "@walmart/react-native-walmartanalytics-api@0.19.0",
       "@walmart/react-native-walmartnavigation-api@0.18.1",
