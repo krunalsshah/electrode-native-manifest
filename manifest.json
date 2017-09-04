@@ -6,12 +6,12 @@
       "@walmart/react-native-walmartnavigation-api@0.18.1",
       "@walmart/react-native-walmartuserauth-api@0.18.3",
       "@walmart/react-native-walmartcookie-api@0.18.0",
-      "@walmart/react-native-walmartstate-api@0.18.0",
-      "@walmart/react-native-walmartheader-api@0.0.3",
+      "@walmart/react-native-walmartstate-api@0.32.0",
+      "@walmart/react-native-walmartheader-api@0.0.4",
       "@walmart/react-native-walmartcheckout-api@0.0.2",
       "@walmart/react-native-cookie-api-impl@0.0.8",
       "@walmart/react-native-payment-api@0.0.5",
-      "@walmart/react-native-easyreturnsstate-api@1.2.2"
+      "@walmart/react-native-easyreturnsstate-api@1.3.0"
     ],
     "targetJsDependencies": [
     ]
