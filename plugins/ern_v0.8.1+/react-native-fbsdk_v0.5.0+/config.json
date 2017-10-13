@@ -29,7 +29,7 @@
     },
     "replaceInFile": [
       {
-        "path": "{{{projectName}}}/Libraries/RCTFBSDK.xcodeproj/project.pbxproj",
+        "path": "{{{projectName}}}/Libraries/RCTFBSDK/RCTFBSDK.xcodeproj/project.pbxproj",
         "string": "~/Documents/FacebookSDK",
         "replaceWith": "$(PROJECT_DIR)/../../../../../../Modules/WalmartIOSShared/Externals/FacebookSDK/**"
       }
