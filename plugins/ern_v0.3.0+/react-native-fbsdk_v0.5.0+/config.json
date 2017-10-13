@@ -20,6 +20,13 @@
       "addHeaderSearchPath": [
         "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTFBSDK/**\""
       ]
-    }
+    },
+    "replaceInFile": [
+      {
+        "path": "{{{projectName}}}/Libraries/RCTFBSDK.xcodeproj/project.pbxproj",
+        "string": "~/Documents/FacebookSDK",
+        "replaceWith": "$(PROJECT_DIR)/../../../../../../Modules/WalmartIOSShared/Externals/FacebookSDK/**"
+      }
+    ]
   }
 }
