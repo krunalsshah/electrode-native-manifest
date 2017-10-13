@@ -26,6 +26,13 @@
         "../../../Modules/WalmartIOSShared/Externals/FacebookSDK/FBSDKLoginKit.framework",
         "../../../Modules/WalmartIOSShared/Externals/FacebookSDK/FBSDKShareKit.framework"
       ]
-    }
+    },
+    "replaceInFile": [
+      {
+        "path": "{{{projectName}}}/Libraries/RCTFBSDK.xcodeproj/project.pbxproj",
+        "string": "~/Documents/FacebookSDK",
+        "replaceWith": "$(PROJECT_DIR)/../../../../../../Modules/WalmartIOSShared/Externals/FacebookSDK/**"
+      }
+    ]
   }
 }
