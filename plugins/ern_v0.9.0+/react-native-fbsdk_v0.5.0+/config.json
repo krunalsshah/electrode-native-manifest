@@ -14,17 +14,23 @@
       { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RCTFBSDK" }
     ],
     "pbxproj": {
-       "addProject": [
-        { "path": "RCTFBSDK/RCTFBSDK.xcodeproj", "group": "Libraries", "staticLibs": [ { "name": "libRCTFBSDK.a", "target": "RCTFBSDK" } ] }
-      ],
       "addHeaderSearchPath": [
         "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTFBSDK/**\""
       ],
-      "addFrameworkReference": [
-        "../../../Modules/WalmartIOSShared/Externals/FacebookSDK/Bolts.framework",
-        "../../../Modules/WalmartIOSShared/Externals/FacebookSDK/FBSDKCoreKit.framework",
-        "../../../Modules/WalmartIOSShared/Externals/FacebookSDK/FBSDKLoginKit.framework",
-        "../../../Modules/WalmartIOSShared/Externals/FacebookSDK/FBSDKShareKit.framework"
+      "addFrameworkSearchPath": [
+        "\"../../../Modules/WalmartIOSShared/Externals/FacebookSDK\""
+      ],
+      "addProject": [
+        { 
+          "path": "RCTFBSDK/RCTFBSDK.xcodeproj", 
+          "group": "Libraries", 
+          "staticLibs": [ { "name": "libRCTFBSDK.a", "target": "RCTFBSDK" } ] 
+        },
+        { 
+          "path": "../../../../../Modules/WalmartIOSShared/WalmartIOSShared.xcodeproj", 
+          "group": "Libraries", 
+          "frameworks": [ { "name": "WalmartIOSShared.framework", "target": "WalmartIOSShared", "productReference": "07C5A03F1C472F4600157A12" } ] 
+        }
       ]
     },
     "replaceInFile": [
