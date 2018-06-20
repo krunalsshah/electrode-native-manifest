@@ -1,0 +1,42 @@
+{
+  "android": {
+    "root": "",
+    "moduleName": "android",
+    "dependencies": [
+      "com.facebook.android:facebook-android-sdk:4.+"
+    ]
+  },
+  "ios": {
+    "copy": [
+      { "source": "ios/**", "dest": "{{{projectName}}}/Libraries/RCTFBSDK" }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTFBSDK/**\""
+      ],
+      "addFrameworkSearchPath": [
+        "\"../../../Modules/WalmartIOSShared/Externals/FacebookSDK\""
+      ],
+      "addProject": [
+        { 
+          "path": "RCTFBSDK/RCTFBSDK.xcodeproj", 
+          "group": "Libraries", 
+          "staticLibs": [ { "name": "libRCTFBSDK.a", "target": "RCTFBSDK" } ] 
+        },
+        { 
+          "path": "../../../../../Modules/WalmartIOSShared/WalmartIOSShared.xcodeproj", 
+          "group": "Libraries", 
+          "frameworks": [ { "name": "WalmartIOSShared.framework", "target": "WalmartIOSShared", "productReference": "07C5A03F1C472F4600157A12", "targetReference": "07C5A03E1C472F4600157A12" } ],
+          "addAsTargetDependency": true
+        }
+      ]
+    },
+    "replaceInFile": [
+      {
+        "path": "{{{projectName}}}/Libraries/RCTFBSDK/RCTFBSDK.xcodeproj/project.pbxproj",
+        "string": "~/Documents/FacebookSDK",
+        "replaceWith": "$(PROJECT_DIR)/../../../../../../Modules/WalmartIOSShared/Externals/FacebookSDK/**"
+      }
+    ]
+  }
+}
