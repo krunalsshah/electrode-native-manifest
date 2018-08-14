@@ -1,0 +1,20 @@
+{
+	"ios": {
+		"copy": [{
+			"source": "*",
+			"dest": "{{{projectName}}}/Frameworks"
+		}],
+		"pbxproj": {
+			"addFramework": [
+				"Bolts.framework",
+				"FBSDKCoreKit.framework",
+				"FBSDKLoginKit.framework",
+				"FBSDKShareKit.framework"
+			],
+			"addFrameworkSearchPath": [
+				"\"$(PROJECT_DIR)/Frameworks\""
+			]
+		}
+	}
+}
+
