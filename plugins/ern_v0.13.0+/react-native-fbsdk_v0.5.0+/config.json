@@ -3,7 +3,7 @@
     "root": "",
     "moduleName": "android",
     "dependencies": [
-      "com.facebook.android:facebook-android-sdk:4.+"
+      "com.facebook.android:facebook-android-sdk:4.37.0"
     ]
   },
   "ios": {
@@ -18,15 +18,15 @@
         "\"../../../Modules/WalmartIOSShared/Externals/FacebookSDK\""
       ],
       "addProject": [
-        { 
-          "path": "RCTFBSDK/RCTFBSDK.xcodeproj", 
-          "group": "Libraries", 
-          "staticLibs": [ { "name": "libRCTFBSDK.a", "target": "RCTFBSDK" } ] 
+        {
+          "path": "RCTFBSDK/RCTFBSDK.xcodeproj",
+          "group": "Libraries",
+          "staticLibs": [ { "name": "libRCTFBSDK.a", "target": "RCTFBSDK" } ]
         },
-        { 
-          "path": "../../../../../Modules/WalmartIOSShared/WalmartIOSShared.xcodeproj", 
-          "group": "Libraries", 
-          "frameworks": [ { "name": "WalmartIOSShared.framework", "target": "WalmartIOSShared", "productReference": "07C5A03F1C472F4600157A12" } ] 
+        {
+          "path": "../../../../../Modules/WalmartIOSShared/WalmartIOSShared.xcodeproj",
+          "group": "Libraries",
+          "frameworks": [ { "name": "WalmartIOSShared.framework", "target": "WalmartIOSShared", "productReference": "07C5A03F1C472F4600157A12" } ]
         }
       ]
     },
